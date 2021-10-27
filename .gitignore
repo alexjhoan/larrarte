@@ -12,3 +12,6 @@
 # misc
 .DS_Store
 .env
+
+#sass
+.sass-cache
