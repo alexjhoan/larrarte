@@ -38,6 +38,7 @@ section {
   box-shadow: 0px 3px 6px #00000029;
 }
 
+//-------------SECTION IMAGE-CAROUSEL---------------------//
 section#image-carousel{
   h1{
     color: $white;
@@ -94,10 +95,14 @@ section#image-carousel{
     margin-right: auto;
     color: #2B233A98;
   }
-
   button:focus {
     outline: none;
   }
+}
+
+section#group{
+  text-align: center;
+  padding: 8vh 0;
 }
 /*----------------------------Queries-------------------------------*/
 
