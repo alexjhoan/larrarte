@@ -7,6 +7,8 @@
   <link rel="preload" href="assets/lib/bootstrap/bootstrap.min.css" as="style">
   <link rel="preload" href="assets/lib/animate.min.css" as="style">
   <link rel="preload" href="assets/styles/css/bundle.min.css" as="style"/>
+  <link rel="stylesheet" href="assets/lib/owl-carousel/owl-carousel.min.css">
+  <link rel="stylesheet" href="assets/lib/owl-carousel/owl-theme.default.min.css">
   <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
   <link rel="stylesheet" href="assets/styles/css/bundle.min.css" />
@@ -14,35 +16,81 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Larrart</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Inversiones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Soy inversor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section>
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h1>Landing title</h1>
-          <p>NOTA: git init no iniciado</p>
+        <div class="col-12 col-nav">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="left">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <div class="right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inversiones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Soy inversor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="image-carousel">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="assets/images/banner-ganado.jpg" alt="Larrarte" class="w-100%">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-12">
+                <div class="titleCarousel">
+                  <h1 class="display-4">Hacé crecer tu capital<br> con rentabilidad asegurada</h1>
+                  <h1 class="mb-md-5 mb-sm-3">Hasta 10% anual</h1>
+                  <a href="#" class="btn btn-primary">Conocer más</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="assets/images/banner-ganado.jpg" alt="Larrarte" class="w-100%">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-12">
+                <div class="titleCarousel">
+                  <h1 class="display-4">Hacé crecer tu capital<br> con rentabilidad asegurada</h1>
+                  <h1 class="mb-md-5 mb-sm-3">Hasta 10% anual</h1>
+                  <a href="#" class="btn btn-primary">Conocer más</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="assets/images/banner-ganado.jpg" alt="Larrarte" class="w-100%">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7 col-12">
+                <div class="titleCarousel">
+                  <h1 class="display-4">Hacé crecer tu capital<br> con rentabilidad asegurada</h1>
+                  <h1 class="mb-md-5 mb-sm-3">Hasta 10% anual</h1>
+                  <a href="#" class="btn btn-primary">Conocer más</a>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -60,6 +108,7 @@
   </footer>
 <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="assets/lib/owl-carousel/owl-carousel.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>

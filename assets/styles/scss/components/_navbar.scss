@@ -1,3 +1,45 @@
-nav {
-  background-color: $steelgray;
+header {
+    background-color: $steelgray;
+
+    a{
+        color: $stylewhite !important;
+    }
+    .left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    li:not(:last-child) {
+        padding: 0 10px;
+    }
+    span{
+        background-image: url(assets/images/bars-white.svg);
+        filter: invert(100%);
+    }
+    .navbar-light .navbar-toggler {
+        color: #2b233a;
+        border: 0px solid rgba(0,0,0,.1);
+    }
+    .navbar {
+        display: block;
+    }
 }
+
+/*----------------------------Queries-------------------------------*/
+
+@media (max-width: 1399px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {
+    header{
+        li {
+            padding: 0 10px;
+        }
+   }
+
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575px) {}
