@@ -200,13 +200,71 @@
       </div>
     </div>
   </section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 contact-center">
+          <h2 class="mb-5">¡Contactanos ahora!</h2>
+          <div class="contactForm">
+            <form id="contactForm" novalidate>
+              <div class="form-floating">
+                <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+                <label for="name">Nombre*</label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                <label for="email">Email*</label>
+              </div>
+              <div class="form-floating">
+                <input type="tel" class="form-control" placeholder="Telefono" name="phone" required>
+                <label for="name">Telefono*</label>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" name="consult" style="height: 110px" placeholder="Consulta" required></textarea>
+                <label for="consult">Consulta*</label>
+              </div>
+
+            </form>
+          </div>
+          <a class="btn btn-primary mt-5" type="submit" onclick="submited()">Enviar</a>
+          <div id="formSending" style="display: none;">
+            <p class="strong">
+              Enviando
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+          <div id="formSuccess" style="display: none;">
+            <p class="strong">¡Consulta Enviada!</p>
+          </div>
+          <div id="formError" style="display: none;">
+            <p class="strong">¡Error en el envio de su consulta.<br>Por favor intentar mas tarde!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <p class="h1">
-            footer
-          </p>
+        <div class="col-md-4 col-12 contact1">
+          <h5 class="mb-1">Oficinas</h5>
+          <div class="line"></div>
+          <h5 class="mb-4">MONTEVIDEO<br> Coronel Brandzen 1956. Of. 505.</h5>
+          <h5> TACUAREMBÓ<br> Lorem Ipsum 1234</h5>
+        </div>
+        <div class="col-md-4 col-12 contact2">
+          <h5 class="mb-1">Contacto</h5>
+          <div class="line"></div>
+          <h5 class="mb-3"><a href="#" target="_blank" onclick='return false'><img src="assets/images/email.svg" alt="Email" class="ifooter2">gestionlarrarte@gmail.com</a></h5>
+          <h5 class="mb-3"><a href="#" target="_blank" onclick='return false'><img src="assets/images/phone.svg" alt="Telephone" class="ifooter2">2407 0035</a></h5>
+          <h5 class="mb-3"><a href="#" target="_blank" onclick='return false'><img src="assets/images/mobile.svg" alt="Mobil" class="ifooter2">099 545 787</a></h5>
+        </div>
+        <div class="col-md-4 col-12 contact3">
+          <img src="assets/images/group-footer.png" alt="Larrarte" class="logo"><br>
+          <a href="#" target="_blank" onclick='return false' ><img src="assets/images/facebook.svg" alt="Facebook" class="ifooter3"></a>
+          <a href="#" target="_blank" onclick='return false'><img src="assets/images/instagram.svg" alt="Instagram" class="ifooter3"></a>
         </div>
       </div>
     </div>
