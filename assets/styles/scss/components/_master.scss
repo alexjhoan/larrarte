@@ -2,6 +2,10 @@
   font-size: 16px;
 }
 
+body{
+  opacity: 0;
+}
+
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Raleway;
   color: $text;
@@ -41,23 +45,37 @@ section {
 //-------------SECTION IMAGE-CAROUSEL---------------------//
 section#image-carousel{
   padding:0;
-  h1{
-    color: $white;
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      filter: brightness(0.5);
+    }
+    h1{
+      color: $white;
+      font-weight: 600;
+    }
+    h1.display-4{
+      font-weight: 600;
+    }
   }
   .titleCarousel {
-    top: 30%;
     position: absolute;
     left: 10%;
   }
   .owl-dots {
     display: none;
   }
+  .owl-theme .owl-nav [class*=owl-] {
+    margin: 0px;
+}
   .owl-prev {
     width: 69px;
     height: 69px;
     position: absolute;
     top: 40%;
-    left: -1%;
+    left: 0%;
     background-color: #2B233A98;
     color: #b2b2b2;
   }
@@ -66,7 +84,7 @@ section#image-carousel{
     height: 69px;
     position: absolute;
     top: 40%;
-    right: -1%;
+    right: 0%;
     background-color: #2B233A98;
     color: #b2b2b2;
   }
@@ -114,9 +132,10 @@ section#are-have{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     text-align: center;
+    align-items: end;
   }
   img{
-    width: 100px;
+    margin-bottom: 13px;
   }
   h4{
     font-weight: 700;
@@ -128,9 +147,9 @@ section#are-have{
 section#investment{
   text-align: center;
  .grid-investment{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
+    display: flex;
+    column-gap: 40px;
+    justify-content: space-evenly;
   }
   .investment{
     position: relative;
@@ -151,13 +170,13 @@ section#investment{
     }
   }
  .PGA{
-    background-image: url(../../images/investiment.png);
+    background-image: url(../../images/ganadero.jpg);
   }
  .Negocios{
-    background-image: url(../../images/investiment.png);
+    background-image: url(../../images/forestales.jpg);
   }
  .Construccion{
-    background-image: url(../../images/investiment.png);
+    background-image: url(../../images/construccion.jpg);
   }
   h2{
     color: $primary;
@@ -168,15 +187,26 @@ section#investment{
 }
 //-------------SECTION MANAGEMENTI---------------------//
 section#managementI{
-  padding-bottom: 130px;
-  background-image: url(../../images/gerencia.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../../images/fondo.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10vh 0 15vh 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  // width: 100vw;
+  // max-height: 526px;
+  // height: 100%;
+  // // img{
+  //   width: 100vw;
+  //   max-height: 526px;
+  //   height: 100%;
+  // }
+  .c-management{
+    // position:absolute;
+    // padding-top: 74px;
+  }
   .managementI {
     position:relative;
     display: flex;
@@ -185,7 +215,7 @@ section#managementI{
     justify-content: center;
   }
   .giftransparent{
-    padding: 40px 20px;
+    padding: 30px 20px;
     background-color: rgba(256,256,256,0.79);
     border-radius: 20px;
     position:relative;
@@ -195,20 +225,26 @@ section#managementI{
     max-height: 211px;
     width: 100%;
     height: 100%;
-    margin-top: 16px
+    margin-top: 16px;
+
+    img{
+    width: 100px;
+    margin-bottom: 15px;
+    max-height: 96px;
+    height: 100%;
+    }
   }
   a.btn.btn-primary {
     position: absolute;
-    top: 350px;
+    top: 365px;
   }
-  img{
-    width: 100px;
-  }
+
   h3{
     color: $textgray;
     font-weight: 700;
+    margin-bottom: 15px;
   }
-  .display6{
+  h1.display6{
     color: $text;
     font-weight: 700;
   }
@@ -220,6 +256,7 @@ section#managementI{
 //-------------SECTION MANAGEMENTII---------------------//
 section#managementII{
   background-color: #DEB83D;
+  padding: 8vh 0 6vh 0;
   h1{
     color: $btn-white;
     font-weight: 700;
@@ -232,7 +269,7 @@ section#managementII{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 400px;
+    // width: 400px;
   }
 }
 //-------------SECTION CONTACT---------------------//
@@ -347,9 +384,54 @@ footer{
       height: 20px;
     }
   }
-  section#managementI {
+  section#investment{
+    .grid-investment{
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  section#are-have{
+    .gif{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  section#managementI{
+    .giftransparent{
+      padding: 40px 20px;
+      grid-template-columns: 1fr;
+      max-width: 335px;
+      max-height: 600px;
+      width: 100%;
+      height: 100%;
+    }
+    .ranchers {
+      padding-top: 20px;
+    }
     a.btn.btn-primary {
-      top: 330px;
+      top: 755px;
+    }
+  }
+  section#managementII{
+    padding: 5vh 0;
+    img{
+      display: none;
+    }
+  }
+
+  footer{
+    text-align: center;
+    .line {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact2, .contact3{
+      padding-top: 40px;
     }
   }
 
@@ -357,9 +439,6 @@ footer{
 
 @media (max-width: 767px) {
   section#image-carousel {
-    .titleCarousel {
-      top: 15%;
-    }
     .owl-prev {
     width: 50px;
     height: 50px;
@@ -377,63 +456,28 @@ footer{
       height: 20px;
     }
   }
-  section#are-have{
-    .gif{
-      grid-template-columns: 1fr 1fr;
-    }
-  }
   section#investment{
-    .grid-investment{
-      grid-template-columns: 1fr;
-      grid-gap: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+    padding: 5vh 0;
+   .investment{
+      height: 400px;
+      a.btn.btn-primary {
+       top: 375px;
+      }
     }
   }
   section#managementI{
-    .giftransparent{
-      padding: 40px 20px;
-      grid-template-columns: 1fr;
-      max-width: 335px;
-      max-height: 600px;
-      width: 100%;
-      height: 100%;
-    }
-    .ranchers {
-    padding-top: 20px;
-  }
     a.btn.btn-primary {
-      top: 665px;
+      top: 735px;
     }
   }
-   section#managementII{
-    .textm {
-      padding-top: 250px;
-    }
-    img{
-      bottom: 180px
-    }
-  }
-  footer{
-    text-align: center;
-    .line {
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .contact2, .contact3{
-      padding-top: 40px;
-    }
-  }
+
 }
 
 @media (max-width: 575px) {
   section#image-carousel {
-    .titleCarousel {
-      top: 10%;
+    h1{
+      line-height: 1;
+      font-size: 25px;
     }
     .owl-prev {
       width: 30px;
@@ -458,28 +502,24 @@ footer{
       grid-gap: 30px;
     }
   }
-  section#managementII{
-    .textm {
-      padding-top: 250px;
-    }
-    img{
-      bottom: 200px
+  section#investment{
+    .investment{
+      height: 390px;
+      a.btn.btn-primary {
+       top: 365px;
+      }
     }
   }
-
 }
 @media (max-width: 380px) {
-  section#managementI{
-    a.btn.btn-primary {
-      top: 680px;
+  section#investment{
+    .investment{
+      padding: 10px;
     }
   }
-  section#managementII{
-    .textm {
-      padding-top: 200px;
-    }
-    img{
-      bottom: 220px
+  section#managementI{
+    a.btn.btn-primary {
+      top: 760px;
     }
   }
 }

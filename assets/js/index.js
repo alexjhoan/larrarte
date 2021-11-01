@@ -1,4 +1,8 @@
-$(window).on('load', function () {
+$(document).ready(function() {
+  $('#managementII').load('assets/components/managementII.html');
+  $('#contact').load('assets/components/contact.html');
+  $('#footer').load('assets/components/footer.html');
+
   $('body').css('opacity', '1');
 });
 
@@ -18,3 +22,5 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     nav:true,
 })
+
+
