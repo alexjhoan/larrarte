@@ -318,9 +318,11 @@ section#contact{
 footer{
   background-color: #0B422F;
   padding: 10vh 0;
+
   h5, a{
     color: $white;
     text-decoration: none;
+    font-weight: bold;
   }
   a:hover{
     color: $white;
@@ -335,16 +337,12 @@ footer{
     width: 300px;
   }
   .ifooter2{
-    width: 30px;
-    filter: invert(1);
     padding-right: 12px;
   }
   .ifooter3{
-    width: 55px;
-    filter: invert(1);
     padding-right: 15px;
   }
-  .conatct3 {
+  .contact3 {
     text-align: end;
     top: 0;
     bottom: 0;
@@ -352,7 +350,43 @@ footer{
     margin-bottom: auto;
   }
 }
-
+//--------------------------------------------PGA.HTML----------------------------------------//
+//----------------------------image-banner---------------------------------//
+section#image-banner{
+    background-image: url(../../images/pga.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  h1{
+    color: $white;
+    font-weight: bold;
+  }
+}
+//----------------------------image-banner---------------------------------//
+section#scheme{
+  background-color: $primary;
+  padding: 12vh 0;
+    .display-5{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 60px;
+      }
+    .gridscheme{
+      display: grid;
+      grid-template-columns: 8% 1fr 8% 1fr 8% 1fr;
+      align-items: center;
+      grid-column-gap: 10px;
+        h5, .display-1{
+        color: $white;
+        font-weight: bold;
+      }
+      .display-1{
+        text-align: center;
+      }
+    }
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399px) {}
@@ -432,6 +466,16 @@ footer{
     }
     .contact2, .contact3{
       padding-top: 40px;
+    }
+  }
+
+  section#scheme{
+    padding: 8vh 0;
+    .display-5{
+        margin-bottom: 30px;
+      }
+    .gridscheme{
+      grid-template-columns: 15% 1fr;
     }
   }
 
