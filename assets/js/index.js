@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('#header').load('assets/components/header.html');
   $('#managementII').load('assets/components/managementII.html');
   $('#contact').load('assets/components/contact.html');
   $('#footer').load('assets/components/footer.html');

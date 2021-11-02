@@ -18,22 +18,21 @@ header {
         display: none ;
     }
     .dropdown-menu{
-        width: 781px;
-        height: 364px;
-        left: -300px;
-        position: absolute;
-        align-items: center;
+        left: -380px;
+        padding:30px;
 
         .grid-menu{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 40px;
+            column-gap: 90px;
+            row-gap: 50px;
         }
         h6 {
             margin-bottom: 14px;
         }
         a{
             color: $primary !important;
+            text-decoration: none;
         }
         span.dropdown-item {
             display: flex;
@@ -73,11 +72,7 @@ header {
             padding: 0 10px;
         }
         .dropdown-menu {
-            width: 400px;
-            height: 665px;
             left: 0;
-            position: absolute;
-            align-items: center;
 
             .grid-menu{
                 grid-template-columns: 1fr;
