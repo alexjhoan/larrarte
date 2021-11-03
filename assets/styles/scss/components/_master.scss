@@ -364,7 +364,7 @@ section#image-banner{
     font-weight: bold;
   }
 }
-//----------------------------image-banner---------------------------------//
+//----------------------------scheme---------------------------------//
 section#scheme{
   background-color: $primary;
   padding: 12vh 0;
@@ -387,6 +387,101 @@ section#scheme{
       }
     }
 }
+//----------------------------question---------------------------------//
+section#questions{
+  padding: 10vh 0 20vh 0;
+  h1.display-5{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 61px;
+  }
+  .accordion-item {
+    margin-bottom: 10px;
+    div#collapseOne {
+      border: none;
+    }
+    h4{
+      font-weight: bold;
+      button.accordion-button.collapsed {
+      background-color: #F4F4F4;
+      border: none;
+      box-shadow: none;
+      }
+      .accordion-button:not(.collapsed) {
+        color: #373948;
+        background-color: #f4f4f4;
+        border: none;
+      }
+      .accordion-button:not(.collapsed)::after {
+        filter: grayscale(1);
+      }
+    }
+  }
+}
+//--------------------------------------------Nosotros.HTML----------------------------------------//
+//----------------------------company---------------------------------//
+section#company{
+  text-align: center;
+  h2{
+    font-weight: bold;
+  }
+}
+//----------------------------directors---------------------------------//
+section#directors{
+  h2{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+  .cdirectors{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    .card{
+      border: none;
+      img.card-img-top {
+        height: 284px;
+        width: 288px;
+        background-color: #00000029;
+        border: none;
+      }
+      p {
+        margin-bottom: 0rem;
+        color: $textgray;
+      }
+    }
+  }
+}
+//----------------------------cabins---------------------------------//
+section#cabins{
+  h2{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+  .ccabins{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    .card{
+      border: none;
+      .card-body {
+        text-align: center;
+      }
+      img.card-img-top {
+        height: 284px;
+        width: 288px;
+        background-color: #00000029;
+        border: none;
+      }
+    }
+  }
+}
+
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399px) {}
@@ -477,6 +572,9 @@ section#scheme{
     .gridscheme{
       grid-template-columns: 15% 1fr;
     }
+  }
+  section#questions{
+    padding: 8vh 0;
   }
 
 }
