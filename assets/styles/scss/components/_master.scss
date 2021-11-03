@@ -353,15 +353,19 @@ footer{
 //--------------------------------------------PGA.HTML----------------------------------------//
 //----------------------------image-banner---------------------------------//
 section#image-banner{
-    background-image: url(../../images/pga.png);
+    background-image: url(../../images/pga.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-position: center;
+    height: 80vh;
+    max-height: 100%;
+    filter: brightness(0.89);
   h1{
     color: $white;
-    font-weight: bold;
+    font-weight: 600;
   }
 }
 //----------------------------scheme---------------------------------//
@@ -481,6 +485,59 @@ section#cabins{
     }
   }
 }
+//--------------------------------------------Administracion.HTML----------------------------------------//
+//----------------------------company---------------------------------//
+section#image-abanner{
+    background-image: url(../../images/menu2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    height: 80vh;
+    max-height: 100%;
+    filter: brightness(0.89);
+  h1{
+    color: $white;
+    font-weight: 600;
+  }
+  h1.display-4{
+    color: $white;
+    font-weight: bold;
+  }
+}
+//----------------------------experience---------------------------------//
+section#experience{
+  background-color: $primary;
+  padding: 6vh 0;
+  h2{
+    font-weight: bold;
+    text-align: center;
+  }
+}
+//----------------------------card-experience---------------------------------//
+section#card-experience{
+  padding: 0;
+  .cexperience {
+    padding: 0;
+    .card {
+      border: none;
+      border-radius: 0;
+      .row.g-0 {
+        align-items: center;
+        .card-body {
+          padding: 78px;
+          h2{
+            font-weight: bold;
+            margin-bottom: 53px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 /*----------------------------Queries-------------------------------*/
 
@@ -575,6 +632,18 @@ section#cabins{
   }
   section#questions{
     padding: 8vh 0;
+  }
+
+  section#card-experience{
+    .itrevert {
+      flex-direction: column-reverse;
+    }
+    .img-fluid {
+    width: 100vw;
+    }
+    h2{
+      margin-bottom: 18px;
+    }
   }
 
 }
