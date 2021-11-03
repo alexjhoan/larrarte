@@ -360,7 +360,7 @@ section#image-banner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 80vh;
+    height: 70vh;
     max-height: 100%;
     filter: brightness(0.89);
   h1{
@@ -495,7 +495,7 @@ section#image-abanner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 80vh;
+    height: 70vh;
     max-height: 100%;
     filter: brightness(0.89);
   h1{
@@ -537,7 +537,61 @@ section#card-experience{
     }
   }
 }
+//--------------------------------------------Negocios.HTML----------------------------------------//
+//----------------------------nimage-banner---------------------------------//
+section#nimage-banner{
+    background-image: url(../../images/menu3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    height: 70vh;
+    max-height: 100%;
+    filter: brightness(0.89);
+  h1{
+    color: $white;
+    font-weight: 600;
+  }
+  h1.display-4{
+    color: $white;
+    font-weight: bold;
+  }
+}
+//----------------------------Benefits---------------------------------//
+section#benefits{
+  padding: 12vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0B422F;
+  .h2tittle{
+    margin-bottom: 95px;
+  }
+  h2{
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+  }
 
+  .gridbenefits{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 100px;
+    text-align: center;
+    img {
+      margin-bottom: 28px;
+      height: 100px;
+    }
+    h5{
+      color: $white;
+    }
+
+
+  }
+}
 
 /*----------------------------Queries-------------------------------*/
 
@@ -619,6 +673,9 @@ section#card-experience{
     .contact2, .contact3{
       padding-top: 40px;
     }
+    .contact3 {
+      text-align: center;
+    }
   }
 
   section#scheme{
@@ -645,7 +702,21 @@ section#card-experience{
       margin-bottom: 18px;
     }
   }
-
+  section#benefits{
+    padding: 8vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0B422F;
+    .h2tittle{
+      margin-bottom: 55px;
+    }
+    .gridbenefits{
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
