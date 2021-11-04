@@ -23,5 +23,11 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     nav:true,
 })
+$('.owl-table').owlCarousel({
+    loop:true,
+    items:1,
+    margin:0,
+    nav:true,
+})
 
 

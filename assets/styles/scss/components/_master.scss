@@ -195,18 +195,7 @@ section#managementI{
   display: flex;
   flex-direction: column;
   align-items: center;
-  // width: 100vw;
-  // max-height: 526px;
-  // height: 100%;
-  // // img{
-  //   width: 100vw;
-  //   max-height: 526px;
-  //   height: 100%;
-  // }
-  .c-management{
-    // position:absolute;
-    // padding-top: 74px;
-  }
+
   .managementI {
     position:relative;
     display: flex;
@@ -360,12 +349,55 @@ section#image-banner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 70vh;
+    height: 100vh;
     max-height: 100%;
-    filter: brightness(0.89);
+    overflow: overlay;
   h1{
     color: $white;
     font-weight: 600;
+  }
+}
+//----------------------------dynamic-table---------------------------------//
+section#dynamic-table{
+  h5{
+    text-align: center;
+  }
+  h6{
+    color: $white;
+  }
+    .list1:not(:last-child){
+      border-bottom: 1px solid #00000059;
+    }
+
+    .list1{
+      background-color: $steelgray;
+      color: white;
+      img {
+      width: 27px;
+      padding-right: 10px;
+    }
+  }
+  .col-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .col-right {
+    text-align: center;
+  }
+  .list-group.list-group-flush {
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 18px;
+  }
+  .list-group-item:not(:last-child) {
+    border-bottom: 1px solid #373948;
+  }
+  .card{
+
+    border:none;
+  }
+  .card-header{
+    border-radius: 0;
   }
 }
 //----------------------------scheme---------------------------------//
@@ -495,9 +527,9 @@ section#image-abanner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 70vh;
+    height: 100vh;
     max-height: 100%;
-    filter: brightness(0.89);
+    overflow: overlay;
   h1{
     color: $white;
     font-weight: 600;
@@ -547,9 +579,9 @@ section#nimage-banner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 70vh;
+    height: 100vh;
     max-height: 100%;
-    filter: brightness(0.89);
+    overflow: overlay;
   h1{
     color: $white;
     font-weight: 600;

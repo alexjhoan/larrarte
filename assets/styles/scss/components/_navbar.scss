@@ -40,6 +40,8 @@ header {
         color: #deb83d;
         background-color: #f8f9fa;
     }
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
     .dropdown-menu{
         left: -380px;
         padding:30px;
