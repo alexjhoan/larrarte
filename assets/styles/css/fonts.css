@@ -1,12 +1,12 @@
 @font-face {
   font-family: Raleway;
-  src: url(../lib/fonts/Raleway/static/Raleway-SemiBold.ttf) format('truetype');
+  src: url(../../lib/fonts/Raleway/static/Raleway-SemiBold.ttf) format('truetype');
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: Raleway;
-  src: url(../lib/fonts/Raleway/static/Raleway-Bold.ttf) format('truetype');
+  src: url(../../lib/fonts/Raleway/static/Raleway-Bold.ttf) format('truetype');
   font-style: normal;
   font-weight: 700;
 }
