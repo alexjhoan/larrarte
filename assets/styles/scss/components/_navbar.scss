@@ -9,7 +9,7 @@ header {
     a{
         color: $stylewhite !important;
     }
-    .nav-item:active {
+    .nav-item:active, .nav-item:hover {
         background-color: #DEB83D;
         a{
             color: #2b233a !important;
@@ -40,11 +40,12 @@ header {
         color: #deb83d;
         background-color: #f8f9fa;
     }
-    .navbar .nav-item .dropdown-menu{ display: none; }
+    // .navbar .nav-item .dropdown-menu{ display: none; }
     .navbar .nav-item:hover .dropdown-menu{ display: block; }
     .dropdown-menu{
         left: -380px;
         padding:30px;
+        top: 95%;
 
         .grid-menu{
             display: grid;
