@@ -18,12 +18,13 @@ header {
     .navbar-expand-lg {
          justify-content: space-between;
          align-items: stretch;
+         .navbar-brand{
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+         }
         .nav-item:active, .nav-item:hover {
             background-color: #DEB83D;
-            .navbar-brand{
-                padding-top: .8rem;
-                padding-bottom: .8rem;
-            }
+
             a{
                 color: #2b233a !important;
             }
@@ -41,6 +42,7 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
     }
     .dropdown-toggle::after{
