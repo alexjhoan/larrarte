@@ -31,3 +31,21 @@ $('.owl-table').owlCarousel({
 })
 
 
+if (screen.width < 992){
+  $("#carouselcard").addClass("owl-carousel owl-theme")
+  $('#carouselcard').owlCarousel({
+    loop:false,
+    margin:15,
+    nav:true,
+    dots: false,
+    responsive:{
+      0:{
+        items:1
+      },
+      575:{
+        items:2
+      },
+    }
+  })
+}
+
