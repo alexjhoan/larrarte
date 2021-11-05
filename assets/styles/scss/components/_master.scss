@@ -146,6 +146,9 @@ section#are-have{
 //-------------SECTION INVESTMENT---------------------//
 section#investment{
   text-align: center;
+  .ipadding {
+    padding: 50px;
+}
  .grid-investment{
     display: flex;
     column-gap: 40px;
@@ -663,6 +666,9 @@ section#benefits{
     }
   }
   section#investment{
+    .ipadding{
+      padding: 0 25px;
+    }
     .grid-investment{
       grid-template-columns: 1fr;
       grid-gap: 50px;
