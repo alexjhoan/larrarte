@@ -162,7 +162,6 @@ section#investment{
     justify-content: space-between;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(0.8);
 
     a.btn.btn-primary {
       position: absolute;
@@ -170,13 +169,13 @@ section#investment{
     }
   }
  .PGA{
-    background-image: url(../../images/ganadero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/ganadero.jpg);
   }
  .Negocios{
-    background-image: url(../../images/forestales.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/forestales.jpg);
   }
  .Construccion{
-    background-image: url(../../images/construccion.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/construccion.jpg);
   }
   h2{
     color: $primary;
@@ -211,8 +210,12 @@ section#managementI{
     background-color: rgba(256,256,256,0.79);
     border-radius: 20px;
     position:relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
     max-width: 835px;
     max-height: 211px;
     width: 100%;
@@ -228,7 +231,7 @@ section#managementI{
   }
   a.btn.btn-primary {
     position: absolute;
-    top: 370px;
+    bottom: -23px;
   }
 
   h3{
@@ -345,8 +348,9 @@ section#dynamic-table{
       flex-direction: row;
       align-items: center;
       padding: 0.5rem 0.5rem 0.5rem 0.8rem;
-      p{
+      .text-list p{
         color: white;
+        font-weight: 400;
       }
       .img-list {
         width: 40px;
@@ -630,20 +634,11 @@ section#benefits{
 /*----------------------------Queries-------------------------------*/
 
 @media (min-width: 1399px) {
-  section#managementI{
-    a.btn.btn-primary {
-      position: absolute;
-      top: 390px;
-    }
-  }
+
 }
 
 @media (max-width: 1199px) {
-   section#managementI {
-    a.btn.btn-primary {
-      top: 385px;
-    }
-  }
+
 }
 
 @media (max-width: 991px) {
@@ -683,7 +678,7 @@ section#benefits{
   section#managementI{
     .giftransparent{
       padding: 40px 20px;
-      grid-template-columns: 1fr;
+      flex-direction: column;
       max-width: 335px;
       max-height: 600px;
       width: 100%;
@@ -692,9 +687,9 @@ section#benefits{
     .ranchers {
       padding-top: 20px;
     }
-    a.btn.btn-primary {
-      top: 755px;
-    }
+    // a.btn.btn-primary {
+    //   top: 755px;
+    // }
   }
   section#managementII{
     padding: 5vh 0;
@@ -783,11 +778,7 @@ section#benefits{
       }
     }
   }
-  section#managementI{
-    a.btn.btn-primary {
-      top: 735px;
-    }
-  }
+
 
 }
 
@@ -835,9 +826,9 @@ section#benefits{
       padding: 10px;
     }
   }
-  section#managementI{
-    a.btn.btn-primary {
-      top: 760px;
-    }
-  }
+  // section#managementI{
+  //   a.btn.btn-primary {
+  //     top: 760px;
+  //   }
+  // }
 }

@@ -60,24 +60,27 @@ header {
             color: $primary !important;
             text-decoration: none;
         }
-        .mtext{ a:hover{
-            background-color: $primary;
-            border-color: $primary;
-            border-radius: 0;
-            padding: 10px 30px;
-            color: $btn-white !important;
-            box-shadow: 0px 3px 6px #00000029;
-            border-radius: 29px;
-            opacity: 1;
-        }}
+        // .mtext{ a:hover{
+        //     border-color: #deb83d;
+        //     border-bottom: 1px solid;
+        //     color: $white !important;
+        // }}
         span.dropdown-item {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
             column-gap: 20px;
             filter: none;
-            }
         }
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: #deb83d;
+            a, a:hover{
+            border-color: #deb83d;
+            border-bottom: 1px solid;
+            color: $white !important;
+        }}
+        }
+
     span{
         background-image: url(assets/images/bars-white.svg);
         filter: invert(100%);
@@ -92,8 +95,9 @@ header {
     .navbar-toggler {
         transition: box-shadow .15s ease-in-out;
     }
-
 }
+
+
 
 /*----------------------------Queries-------------------------------*/
 
