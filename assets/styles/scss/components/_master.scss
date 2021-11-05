@@ -39,9 +39,10 @@ section {
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: $btn-hover!important;
-  border-color: $btn-hover!important;
+  background-color: hsl(46deg 50% 50%) !important;
+  border-color: hsl(46deg 50% 50%) !important;
   box-shadow: 0px 3px 6px #00000029;
+  transition: .3s ease;
 }
 
 //-------------SECTION IMAGE-CAROUSEL---------------------//
@@ -265,7 +266,6 @@ section#managementII{
     position: absolute;
     right: 0;
     bottom: 0;
-    // width: 400px;
   }
 }
 //-------------SECTION CONTACT---------------------//
@@ -322,9 +322,8 @@ section#image-banner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 100vh;
-    max-height: 100%;
-    overflow: overlay;
+    padding: 69px 0;
+    margin-top: 66px;
   h1{
     color: $white;
     font-weight: 600;
@@ -435,12 +434,16 @@ section#questions{
       border: none;
       box-shadow: none;
       text-align: left;
+
       }
       .accordion-button{
         font-size: 1.5rem;
         font-weight: 700;
       }
-
+      .accordion-button::after {
+        background-image: url(../../images/angle-down-solid.svg);
+        background-size: 1rem;
+      }
       .accordion-button:not(.collapsed) {
         color: #373948;
         background-color: #f4f4f4;
@@ -529,9 +532,8 @@ section#image-abanner{
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 100vh;
-    max-height: 100%;
-    overflow: overlay;
+    padding: 69px 0;
+    margin-top: 66px;
   h1{
     color: $white;
     font-weight: 600;

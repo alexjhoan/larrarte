@@ -9,14 +9,20 @@ header {
     a{
         color: $stylewhite !important;
     }
-    .nav-item:active, .nav-item:hover {
+    // .nav-item:active, .nav-item:hover {
+    //     background-color: #DEB83D;
+    //     a{
+    //         color: #2b233a !important;
+    //     }
+    // }
+    .navbar-expand-lg {
+         justify-content: space-between;
+         .nav-item:active, .nav-item:hover {
         background-color: #DEB83D;
         a{
             color: #2b233a !important;
         }
     }
-    .navbar-expand-lg {
-         justify-content: space-between;
     }
     .navbar-collapse {
         width: 100%;
@@ -66,6 +72,7 @@ header {
         //     color: $white !important;
         // }}
         span.dropdown-item {
+
             display: flex;
             flex-direction: row;
             align-items: flex-end;
@@ -95,6 +102,66 @@ header {
     .navbar-toggler {
         transition: box-shadow .15s ease-in-out;
     }
+
+/*------------------------------btn-WhatApp------------------------------*/
+  #whatsappBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    padding: 0;
+    z-index: 10;
+    a {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-decoration: none;
+        span {
+            background: var(--secondary);
+            padding: 6px 10px;
+            font-size: 14px;
+            margin-top: -6px;
+        }
+    }
+    a:hover {
+       text-decoration: none;
+       color: var(--text);
+    }
+    button {
+       -webkit-border-radius: 100%;
+       border-radius: 100%;
+       padding: 0px;
+       border: none;
+       position: relative;
+       z-index: 1;
+       -webkit-animation: brickBtn 6s infinite;
+       animation: brickBtn 6s infinite;
+
+       img {
+        width: 50px;
+       }
+    }
+    button:focus {
+       outline: none;
+    }
+  }
+
+
+
 }
 
 
@@ -107,7 +174,9 @@ header {
 
 @media (max-width: 991px) {
     header{
-
+        .navbar-brand img {
+            padding: 0.8 rem;
+        }
         li {
             padding: 0 10px;
         }
