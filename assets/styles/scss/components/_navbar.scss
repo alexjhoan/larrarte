@@ -99,7 +99,7 @@ header {
         }}
         }
 
-    span{
+    span.navbar-toggler-icon{
         background-image: url(assets/images/bars-white.svg);
         filter: invert(100%);
     }
@@ -203,9 +203,11 @@ header {
                 row-gap: 10px;
                 grid-template-columns: 1fr;
                 span.dropdown-item {
-                   align-items: center;
                    .mimg {
                     display: none;
+                    }
+                    .mtext span {
+                        display: none;
                     }
                 }
             }
@@ -215,6 +217,10 @@ header {
             // a{
             //     color: $stylewhite !important;
             // }
+        }
+        .dropdown-item:focus, .dropdown-item:hover, .dropdown-item:active {
+            color: #deb83d;
+            background-color: #6b6575;
         }
         .dropdown-menu {
             background-color: rgb(255 255 255 / 30%);
