@@ -6,6 +6,7 @@ header {
     max-width: 100 vw;
     top: 0;
     left: 0;
+    height: 71px;
     a{
         color: $stylewhite !important;
     }
@@ -18,16 +19,16 @@ header {
     .navbar-expand-lg {
          justify-content: space-between;
          align-items: stretch;
-         .navbar-brand{
-            padding-top: .8rem;
-            padding-bottom: .8rem;
-         }
+         // .navbar-brand{
+         //    padding-top: .8rem;
+         //    padding-bottom: .8rem;
+         // }
         .nav-item:active, .nav-item:hover {
-            background-color: #DEB83D;
+            // background-color: #DEB83D;
 
-            a{
-                color: #2b233a !important;
-            }
+            // a{
+            //     color: #2b233a !important;
+            // }
         }
     }
     .navbar-collapse {
@@ -38,7 +39,7 @@ header {
         justify-content: flex-end;
         li.nav-item {
             width: 112px;
-            height: 71px;
+            // height: 71px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -77,9 +78,12 @@ header {
 
             display: flex;
             flex-direction: row;
-            align-items: flex-end;
+            align-items: center;
             column-gap: 20px;
             filter: none;
+            .mtext h6{
+                margin-bottom: 5px;
+            }
             .mtext a{
             color: $primary !important;
             text-decoration: none;
@@ -102,6 +106,7 @@ header {
     .navbar-light .navbar-toggler {
         color: #2b233a;
         border: 0px solid rgba(0,0,0,.1);
+
     }
     .navbar {
         padding: 0;
@@ -181,28 +186,42 @@ header {
 
 @media (max-width: 991px) {
     header{
-        .navbar-brand img {
-            padding: 0.8 rem;
+        height: auto;
+        // .navbar-brand img {
+        //     padding: 0.8 rem;
+        // }
+        ul.navbar-nav.mb-2.mb-lg-0 {
+            padding-top: 10px;
         }
         li {
             padding: 0 10px;
         }
         .dropdown-menu {
             left: 0;
-
+            padding: 10px 0;
             .grid-menu{
+                row-gap: 10px;
                 grid-template-columns: 1fr;
+                span.dropdown-item {
+                   align-items: center;
+                   .mimg {
+                    display: none;
+                    }
+                }
             }
         }
         .nav-item:active {
-            background-color:  $steelgray;
+            // background-color:  $steelgray;
             // a{
             //     color: $stylewhite !important;
             // }
         }
         .dropdown-menu {
-            background-color: rgb(255 255 255 / 50%);
+            background-color: rgb(255 255 255 / 30%);
             margin-bottom: 10px;
+            h6{
+                color: $white;
+            }
         }
         .navbar-collapse {
             justify-content: flex-start;

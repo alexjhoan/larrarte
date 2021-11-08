@@ -10,7 +10,9 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Raleway;
   color: $text;
 }
-
+.display-1, .display-4, .display-5, .display-6{
+   font-family: Raleway;
+}
 a,p,div,input,button,textarea{
   font-family: Roboto;
   color: $text-secondary;
@@ -48,13 +50,14 @@ section {
 //-------------SECTION IMAGE-CAROUSEL---------------------//
 section#image-carousel{
   padding:0;
-  margin-top: 60px;
+  margin-top: 66px;
   .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     img{
-      filter: brightness(0.5);
+      filter: brightness(0.3);
+      height: 100vh;
     }
     h1{
       color: $white;
@@ -122,6 +125,7 @@ section#image-carousel{
 //-------------SECTION GROUP---------------------//
 section#group{
   text-align: center;
+
 }
 //-------------SECTION ARE-HAVE-------------------//
 section#are-have{
@@ -174,13 +178,13 @@ section#investment{
     }
   }
  .PGA{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/ganadero.jpg);
+    background-image:url(../../images/ganadero.jpg);
   }
  .Negocios{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/forestales.jpg);
+    background-image:url(../../images/forestales.jpg);
   }
  .Construccion{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/construccion.jpg);
+    background-image:url(../../images/construccion.jpg);
   }
   h2{
     color: $primary;
@@ -319,15 +323,15 @@ section#contact{
 //--------------------------------------------PGA.HTML----------------------------------------//
 //----------------------------image-banner---------------------------------//
 section#image-banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/pga.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../../images/pga.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 70vh;
-    margin-top: 80px;
+    height: 58vh;
+    margin-top: 66px;
   h1{
     color: $white;
     font-weight: 600;
@@ -585,14 +589,14 @@ section#cabins{
 //--------------------------------------------Administracion.HTML----------------------------------------//
 //----------------------------company---------------------------------//
 section#image-abanner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/menu2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  url(../../images/menu2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    padding: 69px 0;
+    height: 58vh;
     margin-top: 66px;
   h1{
     color: $white;
@@ -621,12 +625,18 @@ section#card-experience{
       border: none;
       border-radius: 0;
       .row.g-0 {
-        align-items: center;
+        // align-items: center;
         .img-fluid {
           width: 100%;
         }
+        .card-body.card-ltext{
+          padding: 90px 78px;
+        }
+        .card-body.card-rtext{
+          padding: 52px 78px;
+        }
         .card-body {
-          padding: 0 78px;
+          // padding: 0 78px;
           h2{
             font-weight: bold;
             margin-bottom: 53px;
@@ -639,14 +649,14 @@ section#card-experience{
 //--------------------------------------------Negocios.HTML----------------------------------------//
 //----------------------------nimage-banner---------------------------------//
 section#nimage-banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/negocios.png);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  url(../../images/negocios.png);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-position: center;
-    height: 70vh;
+    height: 58vh;
     margin-top: 66px;
   h1{
     color: $white;
@@ -703,7 +713,14 @@ section#benefits{
 }
 
 @media (max-width: 991px) {
+  section {
+    padding: 8vh 5vh;
+  }
   section#image-carousel {
+    h1.fb{
+      font-weight: 900;
+      margin-top: 27px;
+    }
     .owl-prev {
     width: 50px;
     height: 50px;
@@ -740,6 +757,7 @@ section#benefits{
     }
   }
   section#managementI{
+    padding: 6vh 5vh;
     .giftransparent{
       padding: 40px 20px;
       flex-direction: column;
@@ -756,7 +774,7 @@ section#benefits{
     // }
   }
   section#managementII{
-    padding: 5vh 0;
+    padding: 5vh 5vh;
     img{
       display: none;
     }
@@ -764,12 +782,12 @@ section#benefits{
       margin-bottom: 10px;
     }
   }
-  section#image-banner{
-    height: 60vh;
-  }
-  section#nimage-banner{
-    height: 60vh;
-  }
+  // section#image-banner{
+  //   height: 60vh;
+  // }
+  // section#nimage-banner{
+  //   height: 60vh;
+  // }
   section#dynamic-table{
     .container-fluid {
     padding: 0 8%;
@@ -830,6 +848,9 @@ section#benefits{
       grid-gap: 50px;
     }
   }
+  section#contact {
+    padding: 12vh 5vh;
+  }
 }
 
 @media (max-width: 767px) {
@@ -867,10 +888,6 @@ section#benefits{
 
 @media (max-width: 575px) {
   section#image-carousel {
-    h1{
-      line-height: 1;
-      font-size: 25px;
-    }
     .owl-prev {
       width: 30px;
       height: 30px;
@@ -907,10 +924,10 @@ section#benefits{
 
   }
   section#image-banner{
-    height: 40vh;
+    height: 50vh;
   }
   section#nimage-banner{
-    height: 40vh;
+    height: 50vh;
   }
   section#dynamic-table{
     .container-fluid {
