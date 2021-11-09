@@ -229,6 +229,7 @@ section#questions{
         color: #373948;
         background-color: #f4f4f4;
         border: none;
+        text-align: left;
       }
       .accordion-button:not(.collapsed)::after {
         filter: grayscale(1);
