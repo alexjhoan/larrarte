@@ -19,6 +19,15 @@ a,p,div,input,button,textarea{
   font-size: 1rem;
   font-weight: 400;
 }
+a{
+  font-size: 1rem;
+}
+
+.accordion-button:focus {
+  border: 0;
+  box-shadow: none;
+}
+
 section {
   position: relative;
   padding: 8vh 0;
@@ -42,108 +51,14 @@ button:focus {
   box-shadow: 0px 3px 6px #00000029;
   transition: .3s ease;
 }
-//--------------------------------------------Index.HTML----------------------------------------//
-//-------------SECTION IMAGE-CAROUSEL---------------------//
-section#image-carousel{
-  padding:0;
-  margin-top: 66px;
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    img{
-      filter: brightness(0.3);
-      height: 100vh;
-    }
-    h1{
-      color: $white;
-      font-weight: 600;
-    }
-  }
-  .titleCarousel {
-    position: absolute;
-    left: 10%;
-  }
-  .owl-dots {
-    display: none;
-  }
-  .owl-theme .owl-nav [class*=owl-] {
-    margin: 0px;
-  }
-  .owl-prev {
-    width: 69px;
-    height: 69px;
-    position: absolute;
-    top: 40%;
-    left: 0%;
-    background-color: #2B233A98;
-    color: #b2b2b2;
-  }
-  .owl-next {
-    width: 69px;
-    height: 69px;
-    position: absolute;
-    top: 40%;
-    right: 0%;
-    background-color: #2B233A98;
-    color: #b2b2b2;
-  }
-  .owl-prev span {
-    display: block;
-    background-image: url(../../images/arrow-left-solid.svg);
-    background-repeat: no-repeat;
-    filter: contrast(0.0);
-    width: 32px;
-    height: 31px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    color: #2B233A98;
-  }
-  .owl-next span {
-    display: block;
-    background-image: url(../../images/arrow-right-solid.svg);
-    background-repeat: no-repeat;
-    filter: contrast(0.0);
-    width: 32px;
-    height: 31px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    color: #2B233A98;
-  }
-  button:focus {
-    outline: none;
-  }
-}
+
+
 //-------------SECTION GROUP---------------------//
 section#group{
   text-align: center;
 
 }
-//-------------SECTION ARE-HAVE-------------------//
-section#are-have{
-  background-color: #2B233A;
-  border: 1px solid #707070;
-  padding: 90px 0;
-  .gif{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-    text-align: center;
-    align-items: end;
-  }
-  img{
-    margin-bottom: 13px;
-  }
-  h4{
-    font-weight: 700;
-    color: #D0D0D0;
 
-  }
-}
 //-------------SECTION INVESTMENT---------------------//
 section#investment{
   text-align: center;
@@ -191,64 +106,7 @@ section#investment{
     font-weight: 700;
   }
 }
-//-------------SECTION MANAGEMENTI---------------------//
-section#managementI{
-  background-image: url(../../images/fondo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 10vh 0 15vh 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-position: center;
 
-  .managementI {
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .giftransparent{
-    padding: 30px 20px;
-    background-color: rgba(256,256,256,0.79);
-    border-radius: 20px;
-    position:relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 835px;
-    max-height: 211px;
-    width: 100%;
-    height: 100%;
-    margin-top: 16px;
-    img{
-      width: 100px;
-      margin-bottom: 15px;
-      max-height: 96px;
-      height: 100%;
-    }
-  }
-  a.btn.btn-primary {
-    position: absolute;
-    bottom: -23px;
-  }
-  h3{
-    color: $textgray;
-    font-weight: 700;
-    margin-bottom: 15px;
-  }
-  h1.display-6{
-    color: $text;
-    font-weight: 700;
-  }
-  h4{
-    color: $steelgray;
-    font-weight: 700;
-  }
-}
 //-------------SECTION MANAGEMENTII---------------------//
 section#managementII{
   background-color: #DEB83D;
@@ -315,7 +173,7 @@ section#contact{
 //--------------------------------------------PGA.HTML----------------------------------------//
 //----------------------------image-banner---------------------------------//
 section#image-banner{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../../images/pga.jpg);
+    background-image: linear-gradient(180deg, #00000000 0%, #00000003 2%, #00000096 100%), url(../../images/pga.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -329,146 +187,8 @@ section#image-banner{
     font-weight: 600;
   }
 }
-//----------------------------dynamic-table---------------------------------//
-section#dynamic-table{
-  .container-fluid {
-    padding: 0 8%;
-    h5.text-center {
-      margin-bottom: 78px;
-      margin-top: 67px;
-    }
-      .owl-prev {
-      width: 46px;
-      height: 51px;
-      position: absolute;
-      top: 40%;
-      left: -10%;
-      background-color: #deb83d;
-      color: #b2b2b2;
-    }
-    .owl-next {
-      width: 46px;
-      height: 51px;
-      position: absolute;
-      top: 40%;
-      right: -10%;
-      background-color: #deb83d;
-      color: #b2b2b2;
-    }
-    .owl-prev span {
-      display: block;
-      background-image: url(../../images/arrow-left-solid.svg);
-      background-repeat: no-repeat;
-      filter: invert(1);
-      width: 23px;
-      height: 22px;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      color: #2B233A98;
-    }
-    .owl-next span {
-      display: block;
-      background-image: url(../../images/arrow-right-solid.svg);
-      background-repeat: no-repeat;
-      filter: invert(1);
-      width: 23px;
-      height: 22px;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      color: #2B233A98;
-    }
-    h6{
-      color: $white;
-    }
-    p{
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .item{
-      text-align: center;
-    }
-    .list1:not(:last-child){
-      border-bottom: 1px solid #00000059;
-    }
 
-    .list1{
-      background-color: $steelgray;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0.5rem 0.5rem 0.5rem 0.8rem;
-      .text-list p{
-        color: white;
-        font-weight: 400;
-      }
-      .img-list {
-        width: 40px;
-        text-align: center;
-        margin-right: 15px;
-        img{
-          height: 35px;
-          width: 40px;
-        }
-      }
-    }
-    .list-group-item:not(:last-child) {
-      border-bottom: 1px solid #373948;
-    }
-    .list-group-item{
-    padding: 0.5rem 0.5rem;
-    }
-    .card{
-      border:none;
-      border-radius: 0;
-      .list-group.list-group-flush {
-        box-shadow: 0px 3px 6px #00000029;
-        margin-bottom: 18px;
-      }
-    }
-    .card.prueba {
-      margin-top: 208px;
-    }
-    .card-textp {
-      text-align: initial;
-    }
-    .card-header{
-      border-radius: 0;
-      padding: 21px 0;
-      h4{
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-//----------------------------scheme---------------------------------//
-section#scheme{
-  background-color: $primary;
-  padding: 12vh 0;
-    .display-5{
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 60px;
-      }
-    .gridscheme{
-      display: grid;
-      grid-template-columns: 8% 1fr 8% 1fr 8% 1fr;
-      align-items: center;
-      grid-column-gap: 10px;
-      grid-row-gap: 43px;
-        h5, .display-1{
-        color: $white;
-        font-weight: bold;
-      }
-      .display-1{
-        text-align: center;
-        font-size: 90px;
-      }
-    }
-}
+
 //----------------------------question---------------------------------//
 section#questions{
   padding: 10vh 0 20vh 0;
@@ -509,6 +229,7 @@ section#questions{
         color: #373948;
         background-color: #f4f4f4;
         border: none;
+        text-align: left;
       }
       .accordion-button:not(.collapsed)::after {
         filter: grayscale(1);
@@ -532,11 +253,11 @@ section#directors{
     margin-bottom: 47px;
   }
   .cdirectors{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
     .card{
       border: none;
       .card-body {
@@ -613,35 +334,6 @@ section#experience{
     text-align: center;
   }
 }
-//----------------------------card-experience---------------------------------//
-section#card-experience{
-  padding: 0;
-  .cexperience {
-    padding: 0;
-    .card {
-      border: none;
-      border-radius: 0;
-      .row.g-0 {
-        .img-fluid {
-          width: 100%;
-        }
-        .card-body.card-ltext{
-          padding: 90px 78px;
-        }
-        .card-body.card-rtext{
-          padding: 52px 78px;
-        }
-        .card-body {
-          // padding: 0 78px;
-          h2{
-            font-weight: bold;
-            margin-bottom: 53px;
-          }
-        }
-      }
-    }
-  }
-}
 //--------------------------------------------Negocios.HTML----------------------------------------//
 //----------------------------nimage-banner---------------------------------//
 section#nimage-banner{
@@ -663,42 +355,9 @@ section#nimage-banner{
     font-weight: bold;
   }
 }
-//----------------------------Benefits---------------------------------//
-section#benefits{
-  padding: 12vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #0B422F;
-  .h2tittle{
-    margin-bottom: 95px;
-  }
-  h2{
-    text-align: center;
-    color: $white;
-    font-weight: bold;
-  }
-
-  .gridbenefits{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px 100px;
-    text-align: center;
-    img {
-      margin-bottom: 28px;
-      height: 100px;
-    }
-    h5{
-      color: $white;
-      font-weight: 700;
-    }
 
 
-  }
-}
-
-/*----------------------------Queries-------------------------------*/
+/*----------------------------Querys-------------------------------*/
 
 @media (min-width: 1399px) {
 
@@ -712,8 +371,12 @@ section#benefits{
   section {
     padding: 8vh 2vh;
   }
-//--------------------------------------------Index.HTML----------------------------------------//
-//-------------SECTION IMAGE-CAROUSEL---------------------//
+  section#questions {
+    padding: 5vh  0 5vh;
+  }
+  h5, .h5 {
+    font-size: 1rem;
+  }
   section#image-carousel {
     h1.fb{
       font-weight: 900;
@@ -756,22 +419,11 @@ section#benefits{
       justify-content: center;
     }
   }
-//-------------SECTION MANAGEMENTI---------------------//
-  section#managementI{
-    padding: 6vh 5vh;
-    .giftransparent{
-      padding: 40px 20px;
-      flex-direction: column;
-      max-width: 335px;
-      max-height: 600px;
-      width: 100%;
-      height: 100%;
-    }
-    .ranchers {
-      padding-top: 20px;
+  section#are-have{
+    .gif{
+      grid-template-columns: 1fr 1fr;
     }
   }
-//-------------SECTION MANAGEMENTII---------------------//
   section#managementII{
     padding: 5vh 3vh;
     img{
@@ -781,111 +433,13 @@ section#benefits{
       margin-bottom: 10px;
     }
   }
-//-----------------SECTION CONTACT---------------------//
-  section#contact {
-    padding: 12vh 3vh;
-  }
-//--------------------------------------------PGA.HTML----------------------------------------//
-//------------------SECTION DYNAMIC-TABLE-----------------------//
-  section#dynamic-table{
-    .container-fluid {
-      padding: 0 8%;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      h5.text-center {
-        margin-bottom: 60px;
-        margin-top: 0;
-      }
-      .card.prueba {
-        margin-top: 195px;
-      }
-      .owl-prev {
-        left: -13%;
-      }
-      .owl-next {
-        right: -13%;
-      }
-    }
-  }
-//--------------------SECTION SCHEME---------------------------//
-  section#scheme{
-    padding: 8vh 3vh;
-    .display-5{
-      margin-bottom: 30px;
-    }
-    .gridscheme{
-      grid-template-columns: 15% 1fr;
-      h1.display-1 {
-        font-size: 82px;
-      }
-    }
-  }
-//--------------------SECTION QUESTIONS---------------------------//
-  section#questions{
-    padding: 8vh 0;
-  }
-//-----------------------------------Administracion.HTML---------------------------------------//
-//-------------------SECTION CARD-EXPERIENCE---------------------//
-  section#card-experience{
-    .itrevert {
-      flex-direction: column-reverse;
-    }
-    .img-fluid {
-    width: 100vw;
-    }
-    .cexperience .card .row.g-0 {
-      .card-body {
-        padding: 31px;
-        h2{
-          margin-bottom: 18px;
-        }
-      }
-    }
-  }
-//----------------------SECTION BENEFITS-----------------------//
-  section#benefits{
-    padding: 8vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #0B422F;
-    .h2tittle{
-      margin-bottom: 55px;
-    }
-    .gridbenefits{
-      grid-template-columns: 1fr;
-      grid-gap: 50px;
-    }
-  }
+
+
 }
 
 @media (max-width: 767px) {
-//--------------------------------------------Index.HTML----------------------------------------//
-//-------------SECTION IMAGE-CAROUSEL---------------------//
-  section#image-carousel {
-    .owl-prev {
-    width: 50px;
-    height: 50px;
-    }
-    .owl-next {
-      width: 50px;
-      height: 50px;
-    }
-    .owl-prev span {
-      width: 21px;
-      height: 20px;
-    }
-    .owl-next span {
-      width: 21px;
-      height: 20px;
-    }
-  }
-//-------------SECTION INVESTMENT---------------------//
   section#investment{
-    padding: 5vh 0;
+    padding: 6vh 0 8vh;
    .investment{
       height: 400px;
       a.btn.btn-primary {
@@ -893,49 +447,9 @@ section#benefits{
       }
     }
   }
-//--------------------------------------------PGA.HTML----------------------------------------//
-//------------------SECTION DYNAMIC-TABLE-----------------------//
-  section#dynamic-table{
-    .container-fluid {
-      .owl-prev {
-        left: -14%;
-      }
-      .owl-next {
-        right: -14%;
-      }
-    }
-  }
 }
 
 @media (max-width: 575px) {
-//--------------------------------------------Index.HTML----------------------------------------//
-//-------------SECTION IMAGE-CAROUSEL---------------------//
-  section#image-carousel {
-    .owl-prev {
-      width: 30px;
-      height: 30px;
-    }
-    .owl-next {
-      width: 30px;
-      height: 30px;
-    }
-    .owl-prev span {
-      width: 15px;
-      height: 14px;
-    }
-    .owl-next span {
-      width: 15px;
-      height: 14px;
-    }
-  }
-//-------------SECTION Are-Have---------------------//
-  section#are-have{
-    .gif{
-      grid-template-columns: 1fr;
-      grid-gap: 30px;
-    }
-  }
-//-------------SECTION INVESTMENT---------------------//
   section#investment{
     .investment{
       height: 390px;
@@ -952,39 +466,11 @@ section#benefits{
   section#image-banner{
     height: 50vh;
   }
-//------------------SECTION DYNAMIC-TABLE-----------------------//
-  section#dynamic-table{
-    .container-fluid {
-      padding: 0 10%;
-      .card.prueba{
-        margin-top: 150px;
-      }
-      .owl-prev {
-        left: -18%;
-      }
-      .owl-next {
-        right: -18%;
-      }
-    }
-  }
+
 //-----------------------------------------Negocios.HTML--------------------------------------//
 //-----------------SECTION NIMAGE-BANNER-------------------------//
   section#nimage-banner{
     height: 50vh;
-  }
-}
-@media (max-width: 425px) {
-//--------------------------------------------PGA.HTML----------------------------------------//
-//------------------SECTION DYNAMIC-TABLE-----------------------//
-  section#dynamic-table{
-    .container-fluid{
-      .owl-prev {
-        left: -21%;
-      }
-      .owl-next {
-        right: -21%;
-      }
-    }
   }
 }
 @media (max-width: 380px) {

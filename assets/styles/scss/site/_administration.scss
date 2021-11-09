@@ -1,0 +1,57 @@
+//----------------------------card-experience---------------------------------//
+section#card-experience{
+   padding: 0;
+   .cexperience {
+     padding: 0;
+     .card {
+       border: none;
+       border-radius: 0;
+       .row.g-0 {
+         // align-items: center;
+         .img-fluid {
+           width: 100%;
+         }
+         .card-body.card-ltext{
+           padding: 90px 78px;
+         }
+         .card-body.card-rtext{
+           padding: 52px 78px;
+         }
+         .card-body {
+           // padding: 0 78px;
+           h2{
+             font-weight: bold;
+             margin-bottom: 53px;
+           }
+         }
+       }
+     }
+   }
+}
+
+@media (max-width:991px) {
+   section#card-experience{
+      .container-fluid {
+         padding: 0;
+         &>.row {
+            margin-left: 0;
+            margin-right: 0;
+         }
+      }
+      .itrevert {
+        flex-direction: column-reverse;
+      }
+      .img-fluid {
+      width: 100vw;
+      }
+      .cexperience .card .row.g-0 {
+        .card-body {
+          padding: 30px 35px!important;
+          text-align: left;
+          h2{
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }  
+}
