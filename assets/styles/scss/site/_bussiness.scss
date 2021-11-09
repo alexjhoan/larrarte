@@ -1,0 +1,52 @@
+//----------------------------Benefits---------------------------------//
+section#benefits {
+   padding: 12vh 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #0B422F;
+   .h2tittle{
+     margin-bottom: 95px;
+   }
+   h2{
+     text-align: center;
+     color: $white;
+     font-weight: bold;
+   }
+ 
+   .gridbenefits{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 50px 100px;
+     text-align: center;
+     img {
+       margin-bottom: 28px;
+       height: 100px;
+     }
+     h5{
+       color: $white;
+       font-weight: 700;
+     }
+ 
+ 
+   }
+}
+
+@media (max-width:991px) {
+   section#benefits{
+      padding: 8vh 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #0B422F;
+      .h2tittle{
+        margin-bottom: 55px;
+      }
+      .gridbenefits{
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+      }
+    }
+}

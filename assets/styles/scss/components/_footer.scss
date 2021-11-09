@@ -43,20 +43,24 @@ footer{
 
 @media (max-width: 991.98px) {
   footer{
-    padding: 12vh 3vh;
+    padding: 45px 3vh;
     text-align: left;
     h5{
       margin-bottom: 30px;
     }
 
     .contact2, .contact3{
-      padding-top: 40px;
+      padding-top: 15px;
     }
     .contact3 {
       align-items: flex-start;
       .contac-img {
         margin-bottom: 40px;
       }
+    }
+    .contac-red {
+      width: 100%;
+      text-align: center;
     }
   }
 }

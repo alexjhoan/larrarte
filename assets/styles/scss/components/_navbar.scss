@@ -19,16 +19,6 @@ header {
     .navbar-expand-lg {
          justify-content: space-between;
          align-items: stretch;
-         // .navbar-brand{
-         //    padding-top: .8rem;
-         //    padding-bottom: .8rem;
-         // }
-        .nav-item:active, .nav-item:hover {
-            // background-color: #DEB83D;
-
-            // a{
-            //     color: #2b233a !important;
-            // }
         }
     }
     .navbar-collapse {
@@ -39,7 +29,6 @@ header {
         justify-content: flex-end;
         li.nav-item {
             width: 112px;
-            // height: 71px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -53,13 +42,11 @@ header {
         color: #deb83d;
         background-color: #f8f9fa;
     }
-    // .navbar .nav-item .dropdown-menu{ display: none; }
-    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    // .navbar .nav-item .dropdown-menu{ display: none; }    
     .dropdown-menu{
         left: -380px;
         padding:30px;
         top: 95%;
-
         .grid-menu{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -69,13 +56,7 @@ header {
         h6 {
             margin-bottom: 14px;
         }
-        // .mtext a{
-        //     color: $primary !important;
-        //     text-decoration: none;
-        // }
-
         span.dropdown-item {
-
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -174,11 +155,8 @@ header {
 
 
 
-}
 
-
-
-/*----------------------------Queries-------------------------------*/
+/*----------------------------Querys-------------------------------*/
 
 @media (max-width: 1399px) {}
 
@@ -187,9 +165,6 @@ header {
 @media (max-width: 991px) {
     header{
         height: auto;
-        // .navbar-brand img {
-        //     padding: 0.8 rem;
-        // }
         ul.navbar-nav.mb-2.mb-lg-0 {
             padding-top: 10px;
         }
@@ -211,12 +186,6 @@ header {
                     }
                 }
             }
-        }
-        .nav-item:active {
-            // background-color:  $steelgray;
-            // a{
-            //     color: $stylewhite !important;
-            // }
         }
         .dropdown-item:focus, .dropdown-item:hover, .dropdown-item:active {
             color: #deb83d;
@@ -252,3 +221,9 @@ header {
 @media (max-width: 767px) {}
 
 @media (max-width: 575px) {}
+
+@media (min-width:992px) {
+    .navbar .nav-item:hover .dropdown-menu{ 
+        display: block; 
+    }
+}
