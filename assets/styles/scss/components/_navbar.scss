@@ -34,7 +34,7 @@ header {
                       }
                 }
 
-                li.nav-item:hover {
+                li.nav-item:hover, li.nav-item:focus, li.nav-item:active, li.nav-item:visited{
                     background-color: #deb83d;
                     a{
                       color: $steelgray;

@@ -52,8 +52,8 @@ button:focus {
     outline: none;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: hsl(46deg 50% 50%) !important;
-  border-color: hsl(46deg 50% 50%) !important;
+  background-color: #d3af3b !important;
+  border-color: #d3af3b !important;
   box-shadow: 0px 3px 6px #00000029;
   transition: .3s ease;
 }
@@ -87,16 +87,17 @@ section#investment{
     align-items: center;
     justify-content: space-between;
     background-repeat: no-repeat;
-    background-size: cover;
-
+    background-size: 100% 100%;
+    background-position: center;
+    transition: all 0.3s ease;
     a.btn.btn-primary {
       position: absolute;
       top: 430px;
     }
   }
-  .investment:hover {
-    transform: scale(1.05);
-    transition: all .5s ease;
+  .investment:hover{
+    background-size: 110% 110%;
+    transition: all 0.5s ease;
   }
  .PGA{
     background-image:url(../../images/ganadero.jpg);
@@ -272,6 +273,8 @@ section#cabins{
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
+      transform: scale(1);
+      transition: all .3s ease;
     .card{
       border: none;
       .card-body {
@@ -283,10 +286,6 @@ section#cabins{
         background-color: #00000029;
         border: none;
       }
-      // img.card-img-top:hover {
-      //   transform: scale(1.05);
-      //   transition: all .5s ease;
-      // }
     }
   }
 }
