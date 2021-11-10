@@ -262,6 +262,10 @@ section#cabins{
     text-align: center;
     margin-bottom: 47px;
   }
+  .ccabins:hover{
+    transform: scale(1.05);
+    transition: all .5s ease;
+  }
   .ccabins{
       display: flex;
       flex-direction: column;
@@ -279,10 +283,10 @@ section#cabins{
         background-color: #00000029;
         border: none;
       }
-      img.card-img-top:hover {
-        transform: scale(1.05);
-        transition: all .5s ease;
-      }
+      // img.card-img-top:hover {
+      //   transform: scale(1.05);
+      //   transition: all .5s ease;
+      // }
     }
   }
 }
