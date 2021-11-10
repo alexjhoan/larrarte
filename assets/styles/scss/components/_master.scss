@@ -276,18 +276,26 @@ section#cabins{
       .card-body {
         text-align: center;
       }
-      img.card-img-top {
+      .card-head {
         height: 284px;
         width: 288px;
-        background-color: #00000029;
         border: none;
-        transform: scale(1);
-        transition: all .3s ease;
+        background-color: #00000029;
+        overflow: hidden;
+        img.card-img-top{
+          height: 284px;
+          width: 288px;
+          transform: scale(1);
+          transition: all .3s ease;
+        }
       }
-      img.card-img-top:hover{
-        transform: scale(1.05);
-        transition: all .5s ease;
+      .card-head:hover {
+        img.card-img-top{
+          transform: scale(1.1);
+          transition: all .5s ease;
+        }
       }
+
     }
   }
 }
