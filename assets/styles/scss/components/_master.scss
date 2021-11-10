@@ -263,18 +263,14 @@ section#cabins{
     text-align: center;
     margin-bottom: 47px;
   }
-  .ccabins:hover{
-    transform: scale(1.05);
-    transition: all .5s ease;
-  }
+
   .ccabins{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
-      transform: scale(1);
-      transition: all .3s ease;
+
     .card{
       border: none;
       .card-body {
@@ -285,6 +281,12 @@ section#cabins{
         width: 288px;
         background-color: #00000029;
         border: none;
+        transform: scale(1);
+        transition: all .3s ease;
+      }
+      img.card-img-top:hover{
+        transform: scale(1.05);
+        transition: all .5s ease;
       }
     }
   }
