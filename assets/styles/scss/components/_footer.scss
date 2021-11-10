@@ -3,7 +3,7 @@ footer{
   background-color: #0B422F;
   padding: 10vh 0;
 
-  h5, a{
+  h6, a{
     color: $white;
     text-decoration: none;
     font-weight: bold;
@@ -45,10 +45,9 @@ footer{
   footer{
     padding: 45px 3vh;
     text-align: left;
-    h5{
+    h6{
       margin-bottom: 30px;
     }
-
     .contact2, .contact3{
       padding-top: 15px;
     }

@@ -10,6 +10,12 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Raleway;
   color: $text;
 }
+h6{
+  font-family: Roboto;
+  font-size: 1.125rem;
+  color: $text;
+}
+
 .display-1, .display-4, .display-5, .display-6{
    font-family: Raleway;
 }
@@ -87,6 +93,10 @@ section#investment{
       position: absolute;
       top: 430px;
     }
+  }
+  .investment:hover {
+    transform: scale(1.05);
+    transition: all .5s ease;
   }
  .PGA{
     background-image:url(../../images/ganadero.jpg);
@@ -245,38 +255,6 @@ section#company{
     font-weight: bold;
   }
 }
-//----------------------------directors---------------------------------//
-section#directors{
-  h2{
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 47px;
-  }
-  .cdirectors{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    .card{
-      border: none;
-      .card-body {
-        flex: 1 1 auto;
-        padding: 1rem 1rem 1rem 0rem;
-      }
-      img.card-img-top {
-        height: 284px;
-        width: 288px;
-        background-color: #00000029;
-        border: none;
-      }
-      p {
-        margin-bottom: 0rem;
-        color: $textgray;
-      }
-    }
-  }
-}
 //----------------------------cabins---------------------------------//
 section#cabins{
   h2{
@@ -300,6 +278,10 @@ section#cabins{
         width: 288px;
         background-color: #00000029;
         border: none;
+      }
+      img.card-img-top:hover {
+        transform: scale(1.05);
+        transition: all .5s ease;
       }
     }
   }
