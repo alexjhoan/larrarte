@@ -38,7 +38,7 @@ section#benefits {
    .gridbenefits{
      display: grid;
      grid-template-columns: 1fr 1fr;
-     grid-gap: 50px 100px;
+     grid-gap: 70px 100px;
      text-align: center;
      img {
        margin-bottom: 28px;
@@ -47,9 +47,8 @@ section#benefits {
      h5{
        color: $white;
        font-weight: 700;
+       font-family: "Roboto";
      }
-
-
    }
 }
 

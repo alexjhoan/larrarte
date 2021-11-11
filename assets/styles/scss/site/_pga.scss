@@ -57,9 +57,11 @@ section#questions{
       font-size: 1rem;
       font-weight: 600;
       color: #373948;
+      font-family: "Roboto";
     }
     h4{
       font-weight: bold;
+      font-family: "Roboto";
 
       button.accordion-button.collapsed {
       background-color: #F4F4F4;
@@ -92,6 +94,10 @@ section#questions{
 section#dynamic-table{
    .container-fluid {
     padding: 0 8%;
+    h5{
+      font-family: "Roboto";
+      font-weight: 400;
+    }
     .owl-prev {
       width: 46px;
       height: 51px;
@@ -173,7 +179,13 @@ section#dynamic-table{
       border-bottom: 1px solid #373948;
     }
     .list-group-item{
-    padding: 0.5rem 0.5rem;
+      padding: 0.5rem 0.5rem;
+      h1, h4{
+        font-weight: 700;
+      }
+      p{
+        font-family: "Roboto";
+      }
     }
     .card{
       border:none;
@@ -184,13 +196,22 @@ section#dynamic-table{
       }
     }
     .card.prueba {
-      margin-top: 190px;
+      margin-top: 219px;
     }
     .card-textp {
       text-align: initial;
     }
     .card-header{
       border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 94px;
+      h4{
+        font-weight: 700;
+        margin-bottom: 0;
+      }
     }
     #carouselcard {
      margin-left: 0;

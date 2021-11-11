@@ -36,6 +36,8 @@ section {
   padding: 8vh 0;
 }
 .btn.btn-primary {
+  font-family: Roboto;
+  font-weight: 400;
   background-color: $primary;
   border-color: $primary;
   border-radius: 0;
@@ -58,12 +60,19 @@ button:focus {
 //-------------SECTION GROUP---------------------//
 section#group{
   text-align: center;
+  h5{
+    font-family: Roboto;
+    font-weight: 400;
+  }
 }
 //-------------SECTION INVESTMENT---------------------//
 section#investment{
   text-align: center;
   .ipadding {
     padding: 50px;
+  }
+  h2{
+    font-weight: 700;
   }
  .grid-investment{
     display: flex;
