@@ -1,7 +1,54 @@
+//----------------------------company---------------------------------//
+section#company{
+  text-align: center;
+  h2{
+    font-weight: bold;
+  }
+}
+//----------------------------cabins---------------------------------//
+section#cabins{
+  h2{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+  .ccabins{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+    .card{
+      border: none;
+      .card-body {
+        text-align: center;
+      }
+      .card-head {
+        height: 284px;
+        width: 288px;
+        border: none;
+        background-color: #00000029;
+        overflow: hidden;
+        img.card-img-top{
+          height: 284px;
+          width: 288px;
+          transform: scale(1);
+          transition: all .3s ease;
+        }
+      }
+      .card-head:hover {
+        img.card-img-top{
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
 @media (max-width: 991px) {
    /*section#questions{
       padding: 0;
-   } */   
+   } */
    section#contact, section#cabins {
       padding: 45px 3vh;
    }

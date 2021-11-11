@@ -222,8 +222,11 @@ div#whatsappBtn {
                 width: 100%;
                 align-items: flex-start;
             }
-            li.nav-item:hover {
+            li.nav-item:hover, li.nav-item:focus, li.nav-item:active, li.nav-item:visited{
                 background-color: #2b233a;
+                a{
+                  color: $white;
+                }
             }
             li {
                 padding: 0 10px;

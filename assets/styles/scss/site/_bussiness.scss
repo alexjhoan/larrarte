@@ -1,3 +1,23 @@
+//----------------------------nimage-banner---------------------------------//
+section#nimage-banner{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  url(../../images/negocios.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    height: 58vh;
+    margin-top: 66px;
+  h1{
+    color: $white;
+    font-weight: 600;
+  }
+  h1.display-4{
+    color: $white;
+    font-weight: bold;
+  }
+}
 //----------------------------Benefits---------------------------------//
 section#benefits {
    padding: 12vh 0;
@@ -14,7 +34,7 @@ section#benefits {
      color: $white;
      font-weight: bold;
    }
- 
+
    .gridbenefits{
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -28,8 +48,8 @@ section#benefits {
        color: $white;
        font-weight: 700;
      }
- 
- 
+
+
    }
 }
 
@@ -49,4 +69,10 @@ section#benefits {
         grid-gap: 50px;
       }
     }
+}
+@media (max-width: 575px) {
+//-----------------SECTION NIMAGE-BANNER-------------------------//
+  section#nimage-banner{
+    height: 50vh;
+  }
 }

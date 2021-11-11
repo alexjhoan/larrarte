@@ -15,7 +15,6 @@ h6{
   font-size: 1.125rem;
   color: $text;
 }
-
 .display-1, .display-4, .display-5, .display-6{
    font-family: Raleway;
 }
@@ -28,12 +27,10 @@ a,p,div,input,button,textarea{
 a{
   font-size: 1rem;
 }
-
 .accordion-button:focus {
   border: 0;
   box-shadow: none;
 }
-
 section {
   position: relative;
   padding: 8vh 0;
@@ -58,66 +55,62 @@ button:focus {
   transition: .3s ease;
 }
 
-
 //-------------SECTION GROUP---------------------//
 section#group{
   text-align: center;
-
 }
-
 //-------------SECTION INVESTMENT---------------------//
 section#investment{
   text-align: center;
   .ipadding {
     padding: 50px;
-}
+  }
  .grid-investment{
     display: flex;
     column-gap: 40px;
     justify-content: space-evenly;
-  }
-  .investment{
-    position: relative;
-    height: 456px;
-    max-width: 407px;
-    width: 100%;
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    transition: all 0.3s ease;
-    a.btn.btn-primary {
-      position: absolute;
-      top: 430px;
+    .investment{
+      position: relative;
+      height: 456px;
+      max-width: 407px;
+      width: 100%;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+      transition: all 0.3s ease;
+      a.btn.btn-primary {
+        position: absolute;
+        top: 430px;
+      }
+      h2{
+        color: $primary;
+        font-weight: 700;
+      }
+      h5, h3{
+        color: $white;
+        font-weight: 700;
+      }
+    }
+    .investment:hover{
+      background-size: 105% 105%;
+      transition: all 0.5s ease;
+    }
+   .PGA{
+      background-image:url(../../images/ganadero.jpg);
+    }
+   .Negocios{
+      background-image:url(../../images/forestales.jpg);
+    }
+   .Construccion{
+      background-image:url(../../images/construccion.jpg);
     }
   }
-  .investment:hover{
-    background-size: 105% 105%;
-    transition: all 0.5s ease;
-  }
- .PGA{
-    background-image:url(../../images/ganadero.jpg);
-  }
- .Negocios{
-    background-image:url(../../images/forestales.jpg);
-  }
- .Construccion{
-    background-image:url(../../images/construccion.jpg);
-  }
-  h2{
-    color: $primary;
-    font-weight: 700;
-  }
-  h5, h3{
-    color: $white;
-    font-weight: 700;
-  }
 }
-
 //-------------SECTION MANAGEMENTII---------------------//
 section#managementII{
   background-color: #DEB83D;
@@ -150,223 +143,44 @@ section#contact{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  input {
-    margin-bottom: 10px;
-    border-radius: 0;
-  }
-  textarea {
-    border-radius: 0;
-    width: 100%;
-  }
-  .contactForm{
-    max-width: 500px;
-    width: 100%;
-  }
-  p.strong {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  p.strong span {
-    background: #fff;
-    height: 6px;
-    width: 6px;
-    border-radius: 100%;
-    margin: 0 3px;
-  }
-  p.strong span:first-child {
-    margin-left: 6px;
-  }
-}
-
-//--------------------------------------------PGA.HTML----------------------------------------//
-//----------------------------image-banner---------------------------------//
-section#image-banner{
-    background-image: linear-gradient(180deg, #00000000 0%, #00000003 2%, #00000096 100%), url(../../images/pga.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-position: center;
-    height: 58vh;
-    margin-top: 66px;
-  h1{
-    color: $white;
-    font-weight: 600;
-  }
-}
-
-
-//----------------------------question---------------------------------//
-section#questions{
-  padding: 10vh 0 20vh 0;
-  h1.display-5{
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 61px;
-  }
-  .accordion-item {
-    margin-bottom: 10px;
-    div#collapseOne {
-      border: none;
-    }
-    .accordion-body{
-      font-size: 1rem;
-      font-weight: 600;
-      color: #373948;
-    }
-    h4{
-      font-weight: bold;
-
-      button.accordion-button.collapsed {
-      background-color: #F4F4F4;
-      border: none;
-      box-shadow: none;
-      text-align: left;
-
+    .contactForm{
+      max-width: 500px;
+      width: 100%;
+      input {
+        margin-bottom: 10px;
+        border-radius: 0;
       }
-      .accordion-button{
-        font-size: 1.5rem;
-        font-weight: 700;
-      }
-      .accordion-button::after {
-        background-image: url(../../images/angle-down-solid.svg);
-        background-size: 1rem;
-      }
-      .accordion-button:not(.collapsed) {
-        color: #373948;
-        background-color: #f4f4f4;
-        border: none;
-        text-align: left;
-      }
-      .accordion-button:not(.collapsed)::after {
-        filter: grayscale(1);
+      textarea {
+        border-radius: 0;
+        width: 100%;
       }
     }
-  }
-}
-//--------------------------------------------Nosotros.HTML----------------------------------------//
-//----------------------------company---------------------------------//
-section#company{
-  text-align: center;
-  h2{
-    font-weight: bold;
-  }
-}
-//----------------------------cabins---------------------------------//
-section#cabins{
-  h2{
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 47px;
-  }
-
-  .ccabins{
+    p.strong {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 10px;
-
-    .card{
-      border: none;
-      .card-body {
-        text-align: center;
-      }
-      .card-head {
-        height: 284px;
-        width: 288px;
-        border: none;
-        background-color: #00000029;
-        overflow: hidden;
-        img.card-img-top{
-          height: 284px;
-          width: 288px;
-          transform: scale(1);
-          transition: all .3s ease;
-        }
-      }
-      .card-head:hover {
-        img.card-img-top{
-          transform: scale(1.05);
-        }
-      }
-
+      flex-direction: row;
+      align-items: baseline;
+    }
+    p.strong span {
+      background: #fff;
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      margin: 0 3px;
+    }
+    p.strong span:first-child {
+      margin-left: 6px;
     }
   }
 }
-//--------------------------------------------Administracion.HTML----------------------------------------//
-//----------------------------IMAGE-ABANNER---------------------------------//
-section#image-abanner{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  url(../../images/menu2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-position: center;
-    height: 58vh;
-    margin-top: 66px;
-  h1{
-    color: $white;
-    font-weight: 600;
-  }
-  h1.display-4{
-    color: $white;
-    font-weight: 700;
-  }
-}
-//----------------------------experience---------------------------------//
-section#experience{
-  background-color: $primary;
-  padding: 6vh 0;
-  h2{
-    font-weight: 700;
-    text-align: center;
-  }
-}
-//--------------------------------------------Negocios.HTML----------------------------------------//
-//----------------------------nimage-banner---------------------------------//
-section#nimage-banner{
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  url(../../images/negocios.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-position: center;
-    height: 58vh;
-    margin-top: 66px;
-  h1{
-    color: $white;
-    font-weight: 600;
-  }
-  h1.display-4{
-    color: $white;
-    font-weight: bold;
-  }
-}
-
-
 /*----------------------------Querys-------------------------------*/
 
-@media (min-width: 1399px) {
+@media (min-width: 1399px) {}
 
-}
-
-@media (max-width: 1199px) {
-
-}
+@media (max-width: 1199px) {}
 
 @media (max-width: 991px) {
   section {
     padding: 8vh 2vh;
-  }
-  section#questions {
-    padding: 5vh  0 5vh;
   }
   h5, .h5 {
     font-size: 1rem;
@@ -427,10 +241,7 @@ section#nimage-banner{
       margin-bottom: 10px;
     }
   }
-
-
 }
-
 @media (max-width: 767px) {
   section#investment{
     padding: 6vh 0 8vh;
@@ -442,8 +253,8 @@ section#nimage-banner{
     }
   }
 }
-
 @media (max-width: 575px) {
+//-------------SECTION INVESTMENT---------------------//
   section#investment{
     .investment{
       height: 390px;
@@ -455,20 +266,8 @@ section#nimage-banner{
       }
     }
   }
-//--------------------------------------------PGA.HTML----------------------------------------//
-//------------------SECTION IMAGE-BANNER-------------------------//
-  section#image-banner{
-    height: 50vh;
-  }
-
-//-----------------------------------------Negocios.HTML--------------------------------------//
-//-----------------SECTION NIMAGE-BANNER-------------------------//
-  section#nimage-banner{
-    height: 50vh;
-  }
 }
 @media (max-width: 380px) {
-//--------------------------------------------Index.HTML----------------------------------------//
 //-------------SECTION INVESTMENT---------------------//
   section#investment{
     .investment{

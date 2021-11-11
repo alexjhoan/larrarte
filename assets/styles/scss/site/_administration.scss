@@ -1,3 +1,32 @@
+//----------------------------IMAGE-ABANNER---------------------------------//
+section#image-abanner{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),  url(../../images/menu2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center;
+    height: 58vh;
+    margin-top: 66px;
+  h1{
+    color: $white;
+    font-weight: 600;
+  }
+  h1.display-4{
+    color: $white;
+    font-weight: 700;
+  }
+}
+//----------------------------experience---------------------------------//
+section#experience{
+  background-color: $primary;
+  padding: 6vh 0;
+  h2{
+    font-weight: 700;
+    text-align: center;
+  }
+}
 //----------------------------card-experience---------------------------------//
 section#card-experience{
    padding: 0;
@@ -53,5 +82,5 @@ section#card-experience{
           }
         }
       }
-    }  
+    }
 }
