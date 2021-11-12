@@ -7,6 +7,9 @@ header {
   top: 0;
   left: 0;
   height: 71px;
+  border-bottom: 1px solid $white;
+  box-shadow: 0px 3px 3px #00000080;
+
   .navbar-expand-lg {
     justify-content: space-between;
     align-items: stretch;
@@ -60,6 +63,7 @@ header {
     left: -380px;
     padding:30px;
     top: 95%;
+    border-radius: 0;
     .grid-menu{
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -67,7 +71,7 @@ header {
       row-gap: 50px;
       .dropdown-item:focus, .dropdown-item:hover {
         color: #deb83d;
-        background-color: #f8f9fa;
+        background-color: #dee2e6;
       }
     }
     span.dropdown-item {
@@ -76,6 +80,12 @@ header {
       align-items: center;
       column-gap: 20px;
       filter: none;
+      .mimg{
+        img {
+          width: 138px;
+          height: 122px;
+        }
+      }
       .mtext p{
         margin-bottom: 0px;
         font-family: "Roboto";

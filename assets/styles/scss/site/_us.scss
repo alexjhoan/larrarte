@@ -1,3 +1,19 @@
+//----------------------------image-banner---------------------------------//
+section#image-usbanner{
+    background-image: linear-gradient(180deg, #00000000 0%, #00000003 2%, #00000096 100%), url(../../images/header-nosotros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: inherit;
+    height: 58vh;
+    margin-top: 66px;
+  h1{
+    color: $white;
+    font-weight: 600;
+  }
+}
 //----------------------------company---------------------------------//
 section#company{
   text-align: center;
@@ -7,6 +23,7 @@ section#company{
   h5{
     font-family: "Roboto";
     font-weight: 400;
+    font-size: 18px;
   }
 }
 //----------------------------cabins---------------------------------//
